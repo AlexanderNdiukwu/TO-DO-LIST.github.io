@@ -577,7 +577,7 @@ a{
    
 }
 
-@media (max-width : 435px ) {
+@media screen and (max-width : 435px ) {
     /* this the head code  */
     body{
         margin: 0px;

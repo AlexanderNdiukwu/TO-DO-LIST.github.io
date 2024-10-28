@@ -26,15 +26,22 @@ let displayedSec = document.querySelector('.sec');
 let Hour = startTime.getHours();
 // console.log(Hour,'this is the code ')
 // console.log(typeof Hour)
-// if (Hour === 1){
+// if (Hour == 0){
 //   console.log( 'it is one ')
-//     let displayedHour = document.querySelector('.hours');
-//     console.log(displayedHour.textContent)
+//   let displayedHour = document.querySelector('.hours');
+//   console.log( displayedHour.textContent,'this is the one i have to taste ')
+//     displayedHour.textContent = '12';
+//     console.log( displayedHour.textContent ,'this is the lower form of the code ')
     
 
 //      displayedHour.textContent= 'what is going' ;
 
 // }
+if (Hour == 0 ){
+    displayedHour.textContent = '12'
+   console.log(displayedHour.textContent)
+
+}
 if (Hour > 12 ){
     let calHour = Hour - 12 ;
 
@@ -49,12 +56,14 @@ if (calHour.toString().length < 2 ){
 
 }
 else {
-     displayedHour.textContent = Hour;
- if (Hour === 0){
-let displayedHour = document.querySelector('.hours');
+     displayedHour.textContent = '12';
+     console.log( displayedHour.textContent,'i think this the mother fucker that was messing uip my codde ')
+//  if (Hour === 0){
+// let displayedHour = document.querySelector('.hours');
 
-displayedHour.textContent = 12 ;
- }
+// displayedHour.textContent = '12' ;
+// console.log (displayedHour.textContent,'thsi si the code ')
+//  }
  // this code adds zero to a single digit if it is a simgle digit
  if (Hour.toString().length < 2 ){
     let addZero = `0${Hour}`
