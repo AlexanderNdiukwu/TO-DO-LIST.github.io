@@ -39,7 +39,8 @@ let Hour = startTime.getHours();
 // }
 if (Hour == 0 ){
     displayedHour.textContent = '12'
-   console.log(displayedHour.textContent)
+    
+//    console.log(displayedHour.textContent)
 
 }
 if (Hour > 12 ){
