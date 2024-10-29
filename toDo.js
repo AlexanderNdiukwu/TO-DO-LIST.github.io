@@ -148,7 +148,7 @@ addTodo.addEventListener('click' , () => {
     // let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
@@ -227,7 +227,7 @@ addTodo1.addEventListener('click' , () => {
     let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
@@ -305,7 +305,7 @@ addTodo2.addEventListener('click' , () => {
     let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
@@ -381,7 +381,7 @@ addTodo3.addEventListener('click' , () => {
     let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
@@ -459,7 +459,7 @@ addTodo4.addEventListener('click' , () => {
     let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
@@ -536,7 +536,7 @@ addTodo5.addEventListener('click' , () => {
     let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
@@ -613,7 +613,7 @@ addTodo6.addEventListener('click' , () => {
     let createListForDel = document.createElement('span');
     let createDel = document.createElement('img');
     createDel.className = 'deleteimg'
-    createDel.src = '/image/delete icon.png'
+    createDel.src = 'image/delete icon.png'
     createListForCheckBox.appendChild(createList2)
     // createListForDel.appendChild(createDel)
     createList.append(createListForCheckBox)
