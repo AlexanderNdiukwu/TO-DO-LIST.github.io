@@ -16,11 +16,40 @@ body{
   
     
 }
+  
 
+/* this is a new code snippet  */ 
 .container {
-    border: 1px solid white;
+  
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-template-rows: auto 100vh auto;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+    
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+
+
+
+.headContainer{
+    display: grid ;
+    grid: 1fr 1fr;
 }
 
 
@@ -233,24 +262,6 @@ input.input{
     justify-content: space-between;
 
 }
-/* .imgcancel{
-    content:'' ; 
-    display: block;
-    position: absolute;
-    bottom: 0px;
-    margin-left: 98px;
-    border-radius: 50%;
-    background-image:url("/image/cancel.webp"); 
-    height: 15px;
-    width: 15px;
-
-} */
-/* .spanContent{
-     display: block;
-     border: 1px solid red ; 
- 
-}
- */
 
 
 /* THIS IS THE MAIN SECTION  */
@@ -381,7 +392,7 @@ input.input{
 
 .sidebar{
    
-    position: absolute;
+   
     background-color: rgb(11, 26, 31);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px ;
@@ -389,7 +400,6 @@ input.input{
     height:100vh ;
     z-index: 1000;
     color: white;
-    display: none;
     top: 0px;
     left: 0px;
     border: 1px solid red ;
