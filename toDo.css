@@ -32,33 +32,38 @@ body{
 }
 
 /* HEAD SECTION */
+
 .headContainer1{
-    display: flex;
+    display: grid ;
+    grid-template-columns: 2rem 1fr ;
+    align-items: center;
     margin-top: 7px; 
-    margin-right: 70px;
+    margin: 10px;
+    gap: 1rem;
+ 
+   
 }
 
 .titleHead {
     border: 1px solid white;
-    width: 1300px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-content: center;
     text-align: center;
-    margin: 0 auto;
     border-radius: 30px;
-    /* padding-top: 10px; */
     padding:  10px 10px 0 5px;
     background:linear-gradient(rgb(32, 38, 43),beige,rgb(11, 54, 11));
     font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 3rem;
     color: black;
   
    
 }
 /* this is the time and searchBar css code  */
 .searchBarContainer{
-    margin-top: 30px;
+    margin-top: 30px ;
     position: relative;
     margin-bottom: 20px;
     display: flex;
@@ -78,15 +83,15 @@ body{
     border: 1px solid white;
     display: flex;
     border-radius: 15px;
-    width: 400px;
+    width: 20rem;
     justify-content: space-between;
  
  
 }
 /* I AM TESTING THE CODE TO SEE IF I CAN MAKE IT MORE RESPONSIVE WHEN DRAGGED  */
 .searchBar{
-    margin-right: 20px;
-    max-width: 508px ;
+   
+   
     position: relative;
     display: flex;
 
@@ -369,51 +374,50 @@ input.input{
 }
 
 .sidebar{
+   
     position: absolute;
-    width: 60vh;
-    /* background-color: black; */
     background-color: rgb(11, 26, 31);
-    border: 1px solid white;
-    /* border-radius: 20px; */
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px ;
-    height: 99vh ;
+    width: 30%;
+    height:100vh ;
     z-index: 1000;
     color: white;
     display: none;
-
+    top: 0px;
+    left: 0px;
+    border: 1px solid red ;
+    
 }
 .contacts1 {
-    position: absolute;
-    bottom: 0px;
-    margin-left: 80px;
- 
-    /* background-color:red ; */
-
- 
-
+    display: grid ;
+    justify-items: center;
+    margin-top: 91%;
+    text-align: center;
+  
+    
+   
 }
 
 .contacts{
-    display: flex;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4px;
     list-style: none;
-    color: red;
-  
-     
+    color: red;    
 }
 a{
     text-decoration: none;
 }
 .space {
-    margin: 10px;
     border: 2px solid white;
-    padding: 0px 6px 0px 6px ;
     background-color: blue;
     border-radius: 20px;
-    font-size: 17px;
-    /* color: white */
-    /* font: white; */
-    /* color: white; */
+    padding: 0px 2px;
+    font-size: 1rem;
+
 } 
 
 .space  a {
@@ -433,6 +437,7 @@ a{
 }
 .prog{
    text-align: center;
+   /* position: absolute; */
    margin-top: 30%;
    font-size: 700;
    font-weight: 300px;
@@ -447,10 +452,10 @@ a{
 .time{
     display: flex;
     border: 1px solid red;
-    font-size: 50px;
+    font-size: 3rem;
     border-radius: 5px;
 
-    width: 220px;
+    width:100%;
     margin: 6px;
     justify-content: space-between;
 
@@ -529,15 +534,16 @@ a{
 
 }
 
+
 .span{
-    margin-top: 20px;
-    margin-left: 50px;
-    max-width: 20px;
- 
+
+    width: 20px;
+    
 }
 
 .spanImage{
     width: 30px;
+    border-radius: 4px;
  
   
 }
@@ -576,6 +582,13 @@ a{
     border-top-right-radius: 15px;
    
 }
+.section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 80%;
+
+   }
 
 @media screen and (max-width : 435px ) {
     /* this the head code  */
@@ -607,12 +620,71 @@ a{
         }
         /* end of the code  */
 
+        /* this is the code for the searchbar code  */
+
         .searchBarContainer{
             display: grid;
-            position: relative;
            justify-content: center;
+           width: 100%;
+        
       
         }
+
+
+/* this is the code for the clock style  */
+
+
+.toggle{
+    width: 100%;
+
+}
+
+.toggleWrap{
+    background-color: black;
+    border: 1px solid white;
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 15px;
+    width: 18rem;
+    justify-content: space-between;
+ 
+ 
+}
+.date{
+    font-size: 0.7rem;
+    font-weight: 8px;
+
+    /* width: ; */
+}
+
+.time{
+    min-width: 80%;
+    display: grid ;
+    grid-template-columns: repeat(5,1fr);
+    overflow: hidden ;
+}
+
+/* end of the clock change  */
+
+
+/* this is the code for the sidebar  */
+
+
+
+.searchBar{
+  
+    width: 200px;
+    max-width: 508px ; 
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    
+    position: relative;
+
+    
+}
+
+
+
         .sepearteImage{
             position: relative;
         }
@@ -684,31 +756,10 @@ a{
         }
 
       
-     
-        .toggleWrap{
-            background-color: black;
-            border: 1px solid white;
-            display: flex;
-            border-radius: 15px;
-            width: 300px;
-            justify-content: space-between;
-         
-         
-        }
-     
+  
    
-        .searchBar{
-            margin-top: 10px;
-            width: 200px;
-            max-width: 508px ; 
-            display: grid;
-            grid-template-columns: 20px 1fr;
-            
-            position: relative;
-
-            
-        }
-      
+   
+     
         .section1{
             display: grid ;
             grid-template-columns: 1fr;
@@ -768,9 +819,7 @@ a{
 
     /* text-decoration: line-through; */
 }
-        
-        
-    
+       
         .section2 {
          
            
@@ -835,13 +884,11 @@ a{
         left: 2px;
     
     } 
-    .searchBar{
-        margin-left: 15%;
-    
-    }
-    
+  
     .searchBarContainer{
-        margin-top: 30px;
+        /* margin-top: 30px; */
+        width: 100%;
+
 
     }
     .deleteimg {
@@ -889,20 +936,6 @@ a{
             background-color: red;
         }
 
-    .toggleWrap{
-        background-color: black;
-        border: 1px solid white;
-        display: flex;
-        border-radius: 15px;
-        width: 270px;
-        justify-content: space-between;
-     
-     
-    }
-    .date{
-        font-size: 8px;
-        font-weight: 800px;
-    }
 
     .counter {
         border: 1px solid black;
@@ -924,9 +957,7 @@ a{
         border: 1px solid blue;
     }
     
-    
-    
-  
+
     
     }
     
@@ -935,10 +966,64 @@ a{
 
 
  
+@media (max-width : 1235px ) and (min-width : 768px){
+    body {
+        background-color: pink;
+    }
+    .headContainer1{
+        display: grid ;
+        grid-template-columns: 2rem 1fr ;
+        align-items: center;
+        margin-top: 7px; 
+        margin: 10px;
+        gap: 1rem;
+       
+    }
+   .section1{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+   
+
+   }
+   .section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 0%;
+
+   }
+   .section1 >.cardContainer:nth-child(4)   {
+    margin-top: 10px;
+   }
+   .section1 >.cardContainer:nth-child(4),.cardContainer:nth-child(5),.cardContainer:nth-child(6)   {
+    margin-top: 10px;
+    margin-right: 12%;
+
+   }
+   .child:nth-child(7)   {
+   
+    grid-column: 2;
+  background-color: green;
+   
+
+
+   }
+
+
+
+
+ 
+}
+
+
 @media (max-width : 767px ) and (min-width : 436px){
+    body{
+        background-color: green;
+    }
+  
     .headContainer1{
         display: grid;
-        grid-template-columns: 1fr 2fr ;
+        grid-template-columns: 1fr 1fr ;
         margin-top: 5px; 
         margin-left: 6%;
      
