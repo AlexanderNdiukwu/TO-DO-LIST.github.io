@@ -6,13 +6,21 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 100px 2fr;
+    grid-template-columns: 300px 2fr;
     grid-template-rows: 100px 80vh 100px;
     grid-template-areas:
-    "header header"
+    "sidebar header"
     "sidebar main"
-    "footer footer";
+    "sidebar footer";
+    transition:grid-template-columns 0.9s ease;
 }
+.container1{
+   
+    grid-template-columns: 30px 2fr;
+    /* background-color: black; */
+
+}
+
 
 .header{
     grid-area: header;

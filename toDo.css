@@ -22,17 +22,19 @@ body{
 .container {
   
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 40px 1fr;
     grid-template-rows: auto 100vh auto;
     grid-template-areas:
     "sidebar header"
     "sidebar main"
     "sidebar footer";
+    transition: 0.9s ease;
     
 }
 
 .sidebar{
     grid-area: sidebar;
+    border: 1px solid white;
 }
 
 .header{
@@ -43,6 +45,8 @@ body{
 }
 .footer{
     grid-area: footer;
+    border: 1px solid white;
+    width: 100%;
 }
 
 
@@ -237,11 +241,9 @@ input.input{
 }
 .lastMemoryrow{
     position: relative;
-    /* margin-top: 1px; */
-
- display: grid;
- grid-template-columns: repeat(2,1fr);
- margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 40px;
 } 
 .lastMemory::after{
     content:'' ; 
@@ -253,7 +255,6 @@ input.input{
     background-image:url("/image/cancel.webp"); 
     height: 15px;
     width: 15px;
-    /* background-size: cover; */
 
 }
 
@@ -303,11 +304,7 @@ input.input{
     width: 300px;
     height: 200px;
     border-radius: 20px;
-    /* background-color: red; */
-    /* background-color: rgba(20, 175, 226, 0.546); */
-
  
-    
 }
 
 .counter {
@@ -394,14 +391,8 @@ input.input{
    
    
     background-color: rgb(11, 26, 31);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px ;
-    width: 30%;
-    height:100vh ;
-    z-index: 1000;
+    width: 100%;
     color: white;
-    top: 0px;
-    left: 0px;
     border: 1px solid red ;
     
 }

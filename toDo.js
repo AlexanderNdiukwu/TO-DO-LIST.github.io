@@ -1,5 +1,5 @@
 //code for the side bar
-let SideBar = document.querySelector('.sidebar');
+// let SideBar = document.querySelector('.sidebar');
 let body = document.getElementsByTagName('body')
 let displaySideBar = document.querySelector('.span');
 let hideSideBar = document.querySelector('.cancel');
