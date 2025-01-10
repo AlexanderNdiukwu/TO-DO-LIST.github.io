@@ -5,14 +5,35 @@ let body = document.getElementsByTagName('body');
 let displaySideBar = document.getElementById('menu-bar');
 let hideSideBar = document.querySelector('.cancel');
 let searchBar = document.querySelector('.btn')
+let profile = document.getElementById('profile-display')
 displaySideBar.addEventListener('click',()=>{
 
     shrinkmenu.classList.toggle('change')
     displaySideBar.style.display = 'none'
+    hideSideBar.style.display = 'block'
+    setTimeout(() => {
+  profile.style.display = 'block'
+
+    }, 300);
+    
+    
+
+
 
 })
 hideSideBar.addEventListener('click',()=>{
-    
+    shrinkmenu.classList.toggle('change')
+    setTimeout(() => {
+        displaySideBar.style.display = 'block'
+
+    }, 1000);
+    hideSideBar.style.display = 'none'
+    setTimeout(() => {
+        profile.style.display = 'none'
+      
+          }, 300);
+
+
 });
 let allContainer = document.querySelectorAll('.list')
 
