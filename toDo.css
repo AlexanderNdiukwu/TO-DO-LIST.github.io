@@ -60,30 +60,22 @@ body{
 
 /* this is the sideBar code  */
 .cancel{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 1px solid black;
     border-radius: 20px;
    
 }
 
 .cancel-sidebar{
-    /* display: grid; */
-    /* justify-content: end; */
-    border: solid red 1px;
+    display: grid; 
+    justify-content: end; 
+  
 
 }
 
 /* HEAD SECTION */
 
-.headContainer1{
-    display: grid ;
-    grid-template-columns: 2rem 1fr ;
-    align-items: center;
-  
- 
-   
-}
 
 .titleHead {
     border: 1px solid white;
@@ -391,14 +383,18 @@ input.input{
     background-color: rgb(11, 26, 31);
     width: 100%;
     color: white;
+    position: relative;
     
     
 }
 .contacts1 {
+    position: absolute;
+    bottom: 0px;
     display: grid ;
     justify-items: center;
-    margin-top: 91%;
     text-align: center;
+    margin: 10px;
+   
   
     
    
@@ -420,8 +416,8 @@ a{
     border: 2px solid white;
     background-color: blue;
     border-radius: 20px;
-    padding: 0px 2px;
-    font-size: 1rem;
+    padding: 0px 6px;
+    font-size: 0.9rem;
 
 } 
 
