@@ -1,15 +1,19 @@
 //code for the side bar
-// let SideBar = document.querySelector('.sidebar');
-let body = document.getElementsByTagName('body')
-let displaySideBar = document.querySelector('.span');
+let shrinkmenu = document.getElementById('container')
+let SideBar = document.querySelector('.sidebar');
+let body = document.getElementsByTagName('body');
+let displaySideBar = document.getElementById('menu-bar');
 let hideSideBar = document.querySelector('.cancel');
 let searchBar = document.querySelector('.btn')
 displaySideBar.addEventListener('click',()=>{
-SideBar.style.display = 'block';
-body[0].style.overflow = 'hidden'})
+
+    shrinkmenu.classList.toggle('change')
+    displaySideBar.style.display = 'none'
+
+})
 hideSideBar.addEventListener('click',()=>{
-SideBar.style.display = 'none' ;  
-body[0].style.overflow = 'visible'});
+    
+});
 let allContainer = document.querySelectorAll('.list')
 
 let u = document.getElementsByClassName('section')
