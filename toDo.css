@@ -9,7 +9,7 @@ body{
     min-width: 100% ;
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
-    background-color: black;
+  
     background-color: rgb(11, 26, 31);
    scrollbar-width: none;
   
@@ -22,7 +22,7 @@ body{
   
     display: grid;
     grid-template-columns: 40px 1fr;
-    grid-template-rows: auto 88vh auto;
+    grid-template-rows: auto 88vh 10px;
     grid-template-areas:
     "sidebar header"
     "sidebar main"
@@ -34,6 +34,7 @@ body{
 .profile-display{
     display: none;
 }
+
 .change{
     grid-template-columns: 300px 1fr;
 
@@ -42,7 +43,10 @@ body{
 
 .sidebar{
     grid-area: sidebar;
+    border-top-right-radius: 10px;
+   
     border: 1px solid white;
+    
 }
 
 .header{
@@ -372,14 +376,32 @@ input.input{
 .menu-btn{
     margin: 4.2px;
 }
+.buh{
+    display: grid;
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+  
 
+}
 
 
 .sideImg{
-    width: 120px;
-    height: 120px;
+    width: 20px;
+    height: 20px;
     border: 1px solid white;
     border-radius: 50%;
+    transition: 0.9s ease;
+
+}
+
+.sideimage{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+   
+
 
 }
 
