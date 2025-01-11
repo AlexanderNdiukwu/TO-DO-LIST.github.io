@@ -621,12 +621,18 @@ a{
 
 @media screen and (max-width : 435px ) {
     /* this the head code  */
-    body{
-        margin: 0px;
-        padding: 0px;
-        max-width: 100%;
-        }
+ 
     /* this is the title of the code  */
+    .container{
+        display: grid;
+        grid-template-columns: 300px 2fr;
+        grid-template-rows: 100px 100vh 100px;
+        grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+        transition:grid-template-columns 0.9s ease;
+    }
         .headContainer1{
             display: flex;
             margin-top: 5px; 
