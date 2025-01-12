@@ -618,387 +618,68 @@ a{
     margin-left: 80%;
 
    }
-
-@media screen and (max-width : 435px ) {
-    /* this the head code  */
- 
-    /* this is the title of the code  */
-    .container{
-        display: grid;
-        grid-template-columns: 300px 2fr;
-        grid-template-rows: 100px 100vh 100px;
+   
+   @media screen and (max-width: 435px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
         grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
-        transition:grid-template-columns 0.9s ease;
+        "header"
+        "sidebar"
+        "main"
+        "footer";
     }
-        .headContainer1{
-            display: flex;
-            margin-top: 5px; 
-            margin-right: 0px;
-        }
- /* this is the code for the sidebar */
-        .span{
-            width: 40px;
-            
-        }
-        .spanImage{
-            width: 30px;
-            
-        }
-        .spanImage:hover{
-            width: 15px;
-            border: 1px solid white;
-        
-        
-        }
-        /* end of the code  */
 
-        /* this is the code for the searchbar code  */
+    .sidebar {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 
-        .searchBarContainer{
-            display: grid;
-           justify-content: center;
-           width: 100%;
-        
-      
-        }
+    .header, .main, .footer {
+        width: 100%;
+    }
 
-
-/* this is the code for the clock style  */
-
-
-.toggle{
-    width: 100%;
-
-}
-
-.toggleWrap{
-    background-color: black;
-    border: 1px solid white;
-    display: grid ;
-    grid-template-columns: repeat(2,1fr);
-    border-radius: 15px;
-    width: 18rem;
-    justify-content: space-between;
- 
- 
-}
-.date{
-    font-size: 0.7rem;
-    font-weight: 8px;
-
-    /* width: ; */
-}
-
-.time{
-    min-width: 80%;
-    display: grid ;
-    grid-template-columns: repeat(5,1fr);
-    overflow: hidden ;
-}
-
-/* end of the clock change  */
-
-
-/* this is the code for the sidebar  */
-
-
-
-.searchBar{
-  
-    width: 200px;
-    max-width: 508px ; 
-    display: grid;
-    grid-template-columns: 20px 1fr;
-    
-    position: relative;
-
-    
-}
-
-
-
-        .sepearteImage{
-            position: relative;
-        }
-
-        .searchBarLMemory{
-            position: relative;
-            display: grid;
-            grid-template-columns:repeat(3,1fr);
-            margin: 0px 0px 1px 0px ;
-            
-        } 
-        .lastMemory{
-            border-radius: 20px;
-            font-size: 8px;
-            border: 1px solid white;
-            max-width: 120px;
-            max-height: 10px;
-            padding: 0px 2px 2px 3px ;
-            overflow: hidden;
-            margin: 1px;
-            
-        }
-        .lastMemoryrow{
-            position: relative;
-            width: 120px;
-       
-        
-         display: grid;
-         grid-template-columns: repeat(2,1fr);
-         margin-left: 25px;
-         
-        
-        } 
-        .lastMemory::after{
-            content:'' ; 
-            display: block;
-            position: absolute;
-         
-            top: 1px;
-            margin-left: 44px;
-            border-radius: 50%;
-            background-image:url("/image/cancel.webp"); 
-            height: 10px;
-            width: 10px;
-        
-        }
-        .topClear{
-            display: flex;
-            justify-content: 
-            space-between;
-            font-size: 10px;
-        
-        }
-        .small{
-            font-size: 10px;
-        }
-
-        
-        
-        .undone{
-            width: 16px;
-            border: 1px solid rgb(11, 26, 31);
-            margin: 1px 7px 0px 0px ;
-            border-radius: 50%;
-            position: relative;
-            top: 1.4px;
-            left: 1px;
-         
-        }
-
-      
-  
-   
-   
-     
-        .section1{
-            display: grid ;
-            grid-template-columns: 1fr;
-            justify-content: center;
-            margin-right: 13%;
-        
-          
-    
-        }
-        .cardContainer{
-            margin-top: 10px;
-        }
-        .card{
-            border: 1px solid white;
-            width: 270px;
-            height: 200px;
-            border-radius: 20px;
-            
-            /* background-color: red; */
-            /* background-color: rgba(20, 175, 226, 0.546); */
-        
-         
-            
-        }
-        .inputDisplay{
-            border: 1px black solid ;
-            border-radius: 9px;
-            background-color: rgb(44, 44, 170);
-            width: 40px;
-          
-            padding: 1px 2px 1px 2px;
-            margin-left: 6px;
-            margin-top: 5px;
-        }
-        .inputDisplay:hover{
-            width: 50px;
-            border: 1px solid red;
-         
-        
-        
-        }
-        
-.list {
-    display: flex;
-    margin: 3px 0 2px 0;
-    
-
-  
-    list-style: none ;
-    border: 1px solid white;
-    background-color: aliceblue;
-    border-radius: 15px;
-    /* padding: 1px; */
-    width: 250.9px;
-    color: black;
-    word-wrap: break-word;
-
-    /* text-decoration: line-through; */
-}
-       
-        .section2 {
-         
-           
-            display: grid ;
-            justify-content: center;
-            grid-template-columns: 1fr;
-            margin-right: 31%;
-        
-        }
-    
-       
-        .span{
-            margin-top: 10px;
-            margin-left: 10px;
-         
-        }
-        
-        .spanImage{
-            width: 20px;
-            margin: 2px;
-         
-          
-        }
-        
     .titleHead {
-        margin: 0px;
-        margin-left: 10px;
-        border: 1px solid white;
-        width: 360px;
-        height: 40px;
-        border-radius: 30px;
-        /* padding-top: 10px; */
-        padding:  10px 10px 0 5px;
-        background:linear-gradient(rgb(32, 38, 43),beige,rgb(11, 54, 11));
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 800;
-        font-size: 19px;
-        color: black;
-      
-       
+        font-size: 1.5rem;
+        padding: 10px;
     }
-    input.input{
-    
-        background-color: white;
-        font-size: 10px;
-        border-radius: 30px;
-        padding: 1px 2px 2px 4px;
-        outline: none;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.8);
-      
+
+    .searchBarContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
+    .searchBar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .input {
+        width: 80%;
+        font-size: 1rem;
+    }
+
     .btn {
-        border-radius: 20px ;
-        border: 1px solid white;
-        font-size: 10px;
-        padding: 1px 2px 2px 2px;
-        background-color: rgb(28, 66, 47);
-        position: relative;
-        bottom: 0px;
-        left: 2px;
-    
-    } 
-  
-    .searchBarContainer{
-        /* margin-top: 30px; */
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .cardContainer {
         width: 100%;
-
-
+        margin: 10px 0;
     }
-    .deleteimg {
 
-        width: 21px;
-        height: 21px;
-        margin-left: 1px;
-        padding: 1px 1px 1px 1px;
-        border-radius: 30px;  
+    .card {
+        width: 90%;
+        margin: 0 auto;
     }
-    .tex1 {
-        width: 200.9px;
-        border-radius: 10px;
-        padding: 2px;
-    }
-    
-    .sidebar{
-        position: absolute;
-        width: 100%;
-     
-        border: 1px solid red ;
-        background-color: rgb(11, 26, 31);
-        border: 1px solid white;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px ;
-        height: 100vh;
-        z-index: 1000;
-        color: white;
-        display: none;
-    
-    }
-    .contacts1 {
-        position: absolute;
-        bottom: 0px;
-       margin: 0px 9vw;
-       /* margin-left:10vw; */
-        
-    }
-        .space{
-            font-size: 14px;
-         
-        }
-
-        .space:hover{
-            background-color: red;
-        }
-
 
     .counter {
-        border: 1px solid black;
-        width: 60px;
-        height: 30px;
-        position: relative;
-        left: 110px;
-        font-size: 30px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-       background-color: rgb(240, 154, 154);
-        color: white;
-       
-    
-    
+        font-size: 1.5rem;
     }
-
-    .lastMemory:hover{
-        border: 1px solid blue;
-    }
-    
-
-    
-    }
-    
-
-
-
+}
 
  
 @media (max-width : 1235px ) and (min-width : 768px){
