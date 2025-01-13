@@ -647,6 +647,23 @@ a{
     .footer{
         grid-area: footer;
     }
+    .searchBarContainer{
+        display: grid;
+    }
+    .section1{
+        display: grid ;
+        grid-template-columns: 1fr;
+      
+
+    }
+
+    .section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
+     
+        margin: 0px;
+    
+       }
+    
+   
 
 } 
  
