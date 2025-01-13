@@ -663,6 +663,21 @@ a{
         margin: 0px;
     
        }
+
+    .searchBarContainer{
+        display: grid;
+        justify-items: center;
+    }
+
+    .section1{
+        margin: 0px;
+        padding: 0px;
+   
+    }
+    .section {
+        display: grid;
+        justify-content: center;
+    }
     
    
 
