@@ -566,6 +566,145 @@ a{
 
 .span{
 
+    width: 20px;
+    
+}
+
+.spanImage{
+    width: 30px;
+    border-radius: 4px;
+ 
+  
+}
+.spanImage:hover{
+    width: 32px;
+    border: 1px solid white;
+
+
+}
+
+
+.deleteimg {
+
+    width: 23px;
+    height: 23px;
+    margin-left: 9px;
+    padding: 1px 1px 1px 1px;
+    border-radius: 30px;  
+}
+.deleteimg:hover{
+    border: 2px solid red ;
+
+}
+
+
+.tex1 {
+    width: 210px;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.noText{
+    margin: 50px 20px 0px 20px ;
+    list-style: none;
+    border: 1px solid white;
+    border-top-right-radius: 15px;
+   
+}
+.section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 80%;
+
+   }
+   .mobile-dropdown{
+    display: none;
+   }
+
+@media screen and (max-width : 435px ) {
+    /* this the head code  */
+ 
+    /* this is the title of the code  */
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 1fr 100px;
+        grid-template-areas:
+        "header"
+        "sidebar"
+        " main"
+        "footer";
+        transition:grid-template-columns 0.9s ease;
+    }
+
+    .header{
+        grid-area: header;
+        
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .searchBarContainer{
+        display: grid;
+    }
+    .section1{
+        display: grid ;
+        grid-template-columns: 1fr;
+      
+
+    }
+
+    .section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
+        display: grid;
+        justify-content: start;
+        margin: 0px;
+    
+       }
+
+    .searchBarContainer{
+        display: grid;
+        justify-items: center;
+    }
+
+    .section1{
+        margin: 0px;
+        padding: 0px;
+   
+    }
+    .section {
+        display: grid;
+        justify-content: center;
+    }
+
+    .titleHead {
+    font-size:1.5rem;
+   
+
+    }
+
+
+    .mobile-dropdown{
+        display: block;
+    }
+
+    .headerContainer{
+        display: grid ;
+        grid-template-columns:  1fr 30px ;
+        margin: 3px;
+    }
+
+    .mobile-dropdown{
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        
     }
 
     .spanImage{
