@@ -621,29 +621,50 @@ a{
    .mobile-dropdown{
     display: none;
    }
+   .mobile-sidebar {
+    display: none;
+   }
 
 @media screen and (max-width : 435px ) {
+    .mobile-sidebar {
+        display: block;
+       }
+    
+
+
     /* this the head code  */
- 
+    
+   .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-areas:
+    "header"
+    " main"
+    "footer";
+    transition: 10s ease;
+}
+
     /* this is the title of the code  */
-    .container{
+    .container1{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 500px 1fr 100px;
+        grid-template-rows: 50px 150px 1fr 100px;
         grid-template-areas:
         "header"
-        "sidebar"
+        "mobile-sidebar"
         " main"
         "footer";
-        transition:grid-template-columns 0.9s ease;
+        transition: 10s ease;
     }
 
     .header{
         grid-area: header;
         
     }
-    .sidebar{
-        grid-area: sidebar;
+    .mobile-sidebar{
+        grid-area: mobile-sidebar;
+       
     }
     .main{
         grid-area: main;
@@ -659,6 +680,9 @@ a{
         grid-template-columns: 1fr;
       
 
+    }
+    .sidebar{
+        display: none;
     }
 
     .section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
@@ -685,8 +709,6 @@ a{
 
     .titleHead {
     font-size:1.5rem;
-   
-
     }
 
 
@@ -704,15 +726,53 @@ a{
         display: grid;
         align-content: center;
         justify-content: center;
+        margin: 3px;
         
     }
 
     .spanImage{
         width: 25px;
     }
-
     
- 
+    /* this is the mobile view side code  */
+    a{
+        color: white;
+    }
+
+    .mobile-sidebar{
+
+        border: white 1px solid ;
+        border-radius: 9px ;     
    
+    }
+    
+    .mobile-display{ 
+        text-align: center;
+        padding: 2px;
+    }
+
+   .sidebar-pages{
+    border: black 1px solid ;
+    border-radius: 10px;
+    padding: 6px;
+   }
+   .sidebar-pages:active{
+    background-color: red;
+   }
+
+   .searchBar{
+    margin-top: 10px ;
+   }
+   .mobile-sidebar{
+    display: none;
+}
+
+.mobile-sidebar1{
+    display: block;
+}
+
+
+
+ 
 
 }

@@ -41,3 +41,45 @@ a{
 .note{
     margin: 90px;
 }
+
+ /* this is the code for the home view  */
+
+ .home-sidebar{
+    display: grid;
+    justify-content: start;
+
+   
+   }
+ 
+
+   .home-imagesidebar{
+    width: 20px;
+  
+   }
+
+   .sideImg{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+   
+   }
+
+   .changePro{
+    color: black ;
+    padding: 1px 5px;
+    border-radius: 9px;
+    background-color: white;
+  
+   }
+
+   .top{
+    margin: 2px;
+   }
+
+   .profile{
+    margin-top: 8px;
+   }
+
+ 
+   

@@ -7,9 +7,9 @@ let hideSideBar = document.querySelector('.cancel');
 let searchBar = document.querySelector('.btn')
 let profile = document.getElementById('profile-display')
 let pro =document.getElementById('sideImg')
+
 displaySideBar.addEventListener('click',()=>{
-    
-    
+  
     shrinkmenu.classList.toggle('change')
     displaySideBar.style.display = 'none'
     hideSideBar.style.display = 'block'
@@ -20,10 +20,6 @@ displaySideBar.addEventListener('click',()=>{
         pro.classList.toggle('sideimage')
         
     }, 200);
-    
-    
-
-
 
 })
 hideSideBar.addEventListener('click',()=>{
@@ -32,9 +28,7 @@ hideSideBar.addEventListener('click',()=>{
     setTimeout(() => {
         pro.classList.toggle('sideimage')
         displaySideBar.style.display = 'block'
-       
-        
-       
+
 
     }, 200);
     hideSideBar.style.display = 'none'
@@ -45,6 +39,26 @@ hideSideBar.addEventListener('click',()=>{
 
 
 });
+
+// this is for the mobile view to display or not when clicked 
+
+let mobile_display = document.getElementsByClassName('mobile-dropdown');
+let  mobile_displayNone = document.getElementsByClassName('mobile-display')
+let heightmobile = document.getElementsByClassName('mobile-sidebar')
+
+mobile_display[0].addEventListener('click',function(){
+
+    heightmobile[0].classList.toggle('mobile-sidebar1')
+    
+   
+        shrinkmenu.classList.toggle('container1')
+       
+       
+
+  
+
+})
+
 let allContainer = document.querySelectorAll('.list')
 
 let u = document.getElementsByClassName('section')
@@ -784,6 +798,7 @@ clickToHistory[0].addEventListener('click',(e)=>{
         search.value = e.target.textContent
     }
 })
+
 // END OF CODE 
 
 // THIS IS THE CODE TO REVERSE AFTER THE SEARCH CODE HAS HIGHLIGHTED IT .. TO HOW IT WAS BEFORE 
