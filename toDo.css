@@ -618,6 +618,9 @@ a{
     margin-left: 80%;
 
    }
+   .mobile-dropdown{
+    display: none;
+   }
 
 @media screen and (max-width : 435px ) {
     /* this the head code  */
@@ -637,6 +640,7 @@ a{
 
     .header{
         grid-area: header;
+        
     }
     .sidebar{
         grid-area: sidebar;
@@ -678,72 +682,37 @@ a{
         display: grid;
         justify-content: center;
     }
-    
+
+    .titleHead {
+    font-size:1.5rem;
    
 
-} 
-
-@media screen and (max-width : 435px ) {
-    /* this the head code  */
- 
-    /* this is the title of the code  */
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 500px 1fr 100px;
-        grid-template-areas:
-        "header"
-        "sidebar"
-        " main"
-        "footer";
-        transition:grid-template-columns 0.9s ease;
     }
 
-    .header{
-        grid-area: header;
+
+    .mobile-dropdown{
+        display: block;
     }
-    .sidebar{
-        grid-area: sidebar;
-    }
-    .main{
-        grid-area: main;
-    }
-    .footer{
-        grid-area: footer;
-    }
-    .searchBarContainer{
-        display: grid;
-    }
-    .section1{
+
+    .headerContainer{
         display: grid ;
-        grid-template-columns: 1fr;
-      
-
+        grid-template-columns:  1fr 30px ;
+        margin: 3px;
     }
 
-    .section1 >.cardContainer:nth-child(5),.cardContainer:nth-child(6),.cardContainer:nth-child(7)   {
+    .mobile-dropdown{
         display: grid;
-        justify-content: start;
-        margin: 0px;
-    
-       }
-
-    .searchBarContainer{
-        display: grid;
-        justify-items: center;
-    }
-
-    .section1{
-        margin: 0px;
-        padding: 0px;
-   
-    }
-    .section {
-        display: grid;
+        align-content: center;
         justify-content: center;
+        
     }
+
+    .spanImage{
+        width: 25px;
+    }
+
     
+ 
    
 
-} 
-
+}
