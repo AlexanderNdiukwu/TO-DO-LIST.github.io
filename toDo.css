@@ -694,7 +694,7 @@ a{
 
     .searchBarContainer{
         display: grid;
-        justify-items: center;
+        justify-content     : center;
     }
 
     .section1{
@@ -776,7 +776,11 @@ input.input{
 }
 .btn{
     font-size: x-small;
-    padding: ;
+    
+}
+
+.undone{
+    margin: 0px;
 }
 /* this is for the testing for the unknown before i delete it all */
 
